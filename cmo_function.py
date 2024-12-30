@@ -10,9 +10,6 @@ neg_col = 'rgba(255, 0, 0, 0.7)'
 col_scale = [[0,'rgba(255, 255, 255, 0.1)'], [0.5,'rgba(31,119,180,0.2)'], [1,'rgba(31,119,180,0.5)']]
 line_color = 'rgba(31,119,180,0.7)'
 
-# Define layout parameters
-layout_params = {'paper_bgcolor':'#F8F9FA', 'plot_bgcolor':'#F8F9FA', 'template': 'plotly_white'}
-
 # Define config dictionary 
 config_dict = dict(
     {'modeBarButtonsToRemove': ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d'],
@@ -182,12 +179,12 @@ def create_area_fillgradient(dff, x_col_name, y_col_name, col_scale, line_color,
     else:
         y_tickformat = ',.0f'
 
-    fig.update_layout(**layout_params,
+    fig.update_layout(
         title=title, title_font_size=20,  title_y=0.94,      
         showlegend=False, modebar_orientation='v',
         height=400, xaxis_range=[dff[x_col_name].min(), dff[x_col_name].max()],
         yaxis=dict(ticklabelstandoff=5, ticksuffix='$' , tickformat=y_tickformat), 
-        xaxis_ticklabelstandoff=5,
+        xaxis_ticklabelstandoff=5,template='plotly_white',
         margin=dict(l=50, t=70, r=70, b=20))    
 
     return fig
@@ -242,10 +239,10 @@ def line_chart_with_pos_and_neg_colors(dff, x_col_name, y_col_name,
                   annotation_position='right')
     
     # Update the layout of the figure for styling and labels
-    fig.update_layout(**layout_params,
+    fig.update_layout(
         title=title,  
         title_font_size=20,     
-        height=250,   
+        height=250, template='plotly_white', 
         margin=dict(l=30, t=50, r=70, b=20),  
         yaxis=dict(ticksuffix='%', ticklabelstandoff=5),  
         xaxis_ticklabelstandoff=10  
