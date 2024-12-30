@@ -1,0 +1,71 @@
+/*To center the header and the cell content, add the following CSS:*/
+
+.ag-header-group-cell {
+    justify-content: center; 
+}
+
+.ag-header-cell-label {
+    justify-content: center;
+}
+
+.ag-theme-alpine {
+    --ag-header-foreground-color: white;
+    --ag-header-background-color: rgb(84, 170, 219);
+    --ag-header-cell-hover-background-color: rgb(45, 115, 180);
+    --ag-header-cell-moving-background-color: rgb(45, 115, 180);
+}
+
+.ag-theme-alpine .ag-header {   
+    background-color: #8FBBD9;
+}
+
+.ag-theme-alpine .ag-header-cell  {
+    font-size: 14px;  
+    font-weight: normal; 
+    color: #F8F9FA;
+}
+.ag-theme-alpine .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 16px;
+    color: #F8F9FA;
+}
+
+.header-large { font-size: 20px; /* Example font size */ } 
+.header-medium { font-size: 16px !important; /* Example font size */ } 
+
+/* Hover and active states for link buttons */ 
+.btn-link:hover, .btn-link:active, .btn-link:focus { 
+    color: black !important; /* Text color */
+    font-weight: 500 !important; 
+   /* background-color: blue; /* Background color */ 
+    /*border-color: rgb(45, 115, 180); /* Border color */
+}
+.accordion-body {
+    padding-bottom: 0 !important;
+}
+.accordion-button {
+    padding: 14px 20px !important; ;
+    
+}
+.accordion-button:hover, .accordion-button:active {
+    background-color: #E8F4FE !important;
+}
+
+.accordion-button:focus, .accordion-button:not(.collapsed) {
+    background-color: #8FBBD9 !important;
+    box-shadow: none !important;  
+}
+
+/* Adjust background color for dbc.Tooltip */
+.tooltip-inner {
+    background-color: white; 
+    color: dimgray; /* Set text color */
+    max-width: 280px; /* Set the maximum width */
+}
+
+/* Change hover background color for dbc.DropdownMenuItem */
+.dropdown-item:hover {    
+    background-color:  #E8F4FE !important;
+    color: black !important; /* Set text color  */
+}
+
