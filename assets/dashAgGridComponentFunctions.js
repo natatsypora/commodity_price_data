@@ -1,5 +1,4 @@
-/*
-This modification simplifies the function to display only the graph component*/
+/*The function to display the graph component*/
 
 var dagcomponentfuncs = window.dashAgGridComponentFunctions = window.dashAgGridComponentFunctions || {};
 
