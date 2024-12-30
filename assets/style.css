@@ -8,13 +8,6 @@
     justify-content: center;
 }
 
-.ag-theme-alpine {
-    --ag-header-foreground-color: white;
-    --ag-header-background-color: rgb(84, 170, 219);
-    --ag-header-cell-hover-background-color: rgb(45, 115, 180);
-    --ag-header-cell-moving-background-color: rgb(45, 115, 180);
-}
-
 .ag-theme-alpine .ag-header {   
     background-color: #8FBBD9;
 }
